@@ -34,7 +34,7 @@ const fakeMember = {
   displayName: 'Maya Okafor',
   id: '111',
   displayAvatarURL: () => 'https://cdn.discordapp.com/embed/avatars/1.png',
-  guild: { name: 'Fieldnote Studio', iconURL: () => null },
+  guild: { name: 'Fieldnote Studio', iconURL: () => 'https://cdn.discordapp.com/icons/1/a.png' },
   toString: () => '<@111>',
 };
 

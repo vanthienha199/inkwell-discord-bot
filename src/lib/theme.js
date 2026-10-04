@@ -27,7 +27,7 @@ function welcomeEmbed(member, { rulesId: rulesChannelId, ticketChannelId, member
         `**3.** Stuck on anything? Open a ticket in ${ticketChannelId ? `<#${ticketChannelId}>` : '#help-desk'} and a moderator will reply.`,
       ].join('\n')
     )
-    .setThumbnail(member.displayAvatarURL({ size: 256 }));
+    .setThumbnail(member.guild.iconURL({ size: 256 }) || member.displayAvatarURL({ size: 256 }));
 }
 
 function ticketPanelEmbed() {
