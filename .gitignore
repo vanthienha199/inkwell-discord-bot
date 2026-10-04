@@ -1,0 +1,6 @@
+node_modules/
+.env
+data/
+notes.md
+.DS_Store
+_check_*

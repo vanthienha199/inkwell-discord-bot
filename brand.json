@@ -1,0 +1,34 @@
+{
+  "out": ".",
+  "hero": {
+    "headline": "Your Discord,\non autopilot",
+    "accent": "autopilot",
+    "stack": "discord.js · Tickets · Mod logs",
+    "chips": ["Private ticket threads", "Welcome and role picker", "Every action logged"],
+    "shot": "raw/ticket_open.png",
+    "url": "discord.com/channels/fieldnote-studio",
+    "shotPosition": "left top"
+  },
+  "deliverables": {
+    "title": "Your server, set up",
+    "accent": "set up",
+    "subtitle": "Source on GitHub · any small host",
+    "tiles": [
+      { "label": "Welcome flow", "img": "raw/tile_welcome.png", "pos": "left top" },
+      { "label": "Ticket panel", "img": "raw/tile_panel.png", "pos": "left top" },
+      { "label": "Mod log", "img": "raw/tile_modlog.png", "pos": "left top" },
+      { "label": "Server rules", "img": "raw/tile_rules.png", "pos": "left top" }
+    ]
+  },
+  "process": {
+    "title": "Online in four days",
+    "accent": "four days",
+    "subtitle": "Built in a test server first, then yours",
+    "steps": [
+      { "day": "Day 1", "title": "Map the server", "text": "Channels, roles and what each command should do." },
+      { "day": "Day 2", "title": "Build the commands", "text": "Slash commands, welcome flow and role picker." },
+      { "day": "Day 3", "title": "Tickets and logs", "text": "Private tickets, transcripts and a moderation log." },
+      { "day": "Day 4", "title": "Host and hand over", "text": "Running on your host, with a short setup guide." }
+    ]
+  }
+}

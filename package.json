@@ -1,0 +1,17 @@
+{
+  "name": "fieldnote-discord-bot",
+  "version": "1.0.0",
+  "description": "Sample Discord bot: welcome flow, private tickets, moderation log",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy.js",
+    "test": "node --test tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  }
+}
