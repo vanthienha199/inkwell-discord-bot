@@ -1,5 +1,5 @@
 {
-  "name": "fieldnote-discord-bot",
+  "name": "inkwell-discord-bot",
   "version": "1.0.0",
   "description": "Sample Discord bot: welcome flow, private tickets, moderation log",
   "main": "src/index.js",

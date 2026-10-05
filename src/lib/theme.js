@@ -1,14 +1,14 @@
 const { EmbedBuilder } = require('discord.js');
 
 const COLORS = {
-  brand: 0xf2994a,
-  ok: 0x3fa66b,
-  warn: 0xe5b94a,
-  danger: 0xd2553f,
-  muted: 0x4a4e57,
+  brand: 0x7ce0b0,
+  ok: 0x7ce0b0,
+  warn: 0xe8c47a,
+  danger: 0xf0707a,
+  muted: 0x5a5466,
 };
 
-const FOOTER = 'Fieldnote Helper';
+const FOOTER = 'Inkwell Helper';
 
 function base(color = COLORS.brand) {
   return new EmbedBuilder().setColor(color).setFooter({ text: FOOTER }).setTimestamp();

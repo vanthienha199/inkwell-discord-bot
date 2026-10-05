@@ -1,34 +1,40 @@
 {
   "out": ".",
-  "hero": {
-    "headline": "Your Discord,\non autopilot",
-    "accent": "autopilot",
-    "stack": "discord.js · Tickets · Mod logs",
-    "chips": ["Private ticket threads", "Welcome and role picker", "Every action logged"],
-    "shot": "raw/ticket_open.png",
-    "url": "discord.com/channels/fieldnote-studio",
-    "shotPosition": "left top"
+  "theme": {
+    "canvas": "#17151C",
+    "surface": "#211E27",
+    "ink": "#ECEAF0",
+    "accent": "#7CE0B0",
+    "display": { "family": "Rubik", "weight": 700, "weights": [400, 700] },
+    "body": { "family": "Rubik", "weights": [400, 700] }
+  },
+  "cover": {
+    "layout": "C",
+    "headline": "A helper bot for your club",
+    "proof": "Report, claim and close a ticket in one thread",
+    "shot": "raw/cover_ticket.png",
+    "shotPosition": "center",
+    "band": "#17151C"
   },
   "deliverables": {
-    "title": "Your server, set up",
-    "accent": "set up",
-    "subtitle": "Source on GitHub · any small host",
+    "title": "What your server gets",
+    "subtitle": "Real screens from a test server for a lettering club",
     "tiles": [
-      { "label": "Welcome flow", "img": "raw/tile_welcome.png", "pos": "left top" },
-      { "label": "Ticket panel", "img": "raw/tile_panel.png", "pos": "left top" },
-      { "label": "Mod log", "img": "raw/tile_modlog.png", "pos": "left top" },
-      { "label": "Server rules", "img": "raw/tile_rules.png", "pos": "left top" }
+      { "label": "Private ticket threads", "img": "raw/ticket_open.png", "pos": "left 30%" },
+      { "label": "Role picker for new members", "img": "raw/role_menu.png", "pos": "left 45%" },
+      { "label": "Mod log with transcripts", "img": "raw/modlog.png", "pos": "left 30%" },
+      { "label": "One command setup", "img": "raw/setup.png", "pos": "left bottom" }
     ]
   },
-  "process": {
-    "title": "Online in four days",
-    "accent": "four days",
-    "subtitle": "Built in a test server first, then yours",
+  "proof": {
+    "title": "From report to logged",
+    "subtitle": "One ticket, start to finish, in the real Discord client",
     "steps": [
-      { "day": "Day 1", "title": "Map the server", "text": "Channels, roles and what each command should do." },
-      { "day": "Day 2", "title": "Build the commands", "text": "Slash commands, welcome flow and role picker." },
-      { "day": "Day 3", "title": "Tickets and logs", "text": "Private tickets, transcripts and a moderation log." },
-      { "day": "Day 4", "title": "Host and hand over", "text": "Running on your host, with a short setup guide." }
-    ]
+      { "when": "Member", "title": "Opens a ticket", "text": "Picks a topic and writes what happened, in a private thread." },
+      { "when": "Moderator", "title": "Claims it", "text": "The status updates and the thread says who is on it." },
+      { "when": "Moderator", "title": "Closes it", "text": "The thread locks and a readable transcript is saved." },
+      { "when": "Automatic", "title": "Logged", "text": "Claim and close land in a private mod log with the transcript." }
+    ],
+    "stat": { "value": "6 of 6", "label": "offline tests pass" }
   }
 }

@@ -18,7 +18,7 @@ const theme = require('./lib/theme');
 
 const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'member';
 
-const INTEREST_ROLES = ['Illustration', 'Lettering', 'UI Design', 'Photography', 'Events'];
+const INTEREST_ROLES = ['Brush lettering', 'Calligraphy', 'Pen and ink', 'Sign painting', 'Meetups'];
 
 const definitions = [
   new SlashCommandBuilder()
@@ -127,7 +127,7 @@ const handlers = {
   async setup(i) {
     await i.deferReply({ flags: MessageFlags.Ephemeral });
     const g = i.guild;
-    const staff = await ensureRole(g, 'Moderator', { colors: { primaryColor: 0xf2994a }, hoist: true });
+    const staff = await ensureRole(g, 'Moderator', { colors: { primaryColor: 0x7ce0b0 }, hoist: true });
     for (const r of INTEREST_ROLES) await ensureRole(g, r);
     const rules = await ensureChannel(g, 'rules');
     const welcome = await ensureChannel(g, 'welcome');
@@ -169,7 +169,7 @@ const handlers = {
     const list = store.warnings(i.guild.id, user.id);
     const embed = theme
       .base(list.length ? theme.COLORS.warn : theme.COLORS.ok)
-      .setTitle(`Warnings for ${user.username}`)
+      .setTitle(`Warnings for ${i.options.getMember("member")?.displayName || user.username}`)
       .setDescription(list.length ? list.map((w, n) => `**${n + 1}.** ${w.reason}  ·  <@${w.by}>  ·  <t:${Math.floor(w.at / 1000)}:d>`).join('\n') : 'No warnings. Clean record.');
     await i.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   },
